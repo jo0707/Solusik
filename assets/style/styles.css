@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
@@ -134,6 +135,7 @@ nav {
     text-align: center;
     position: sticky;
     top: 0;
+    z-index: 10;
     background-color: white;
     transition: .5s;
 }
@@ -184,6 +186,13 @@ nav li {
     border-radius: 4px;
     object-fit: cover;
     object-position: center;
+
+    transition: .5s;
+}
+
+.flex-art-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 4px gray;
 }
 
 .flex-art-text {
@@ -222,8 +231,6 @@ nav li {
     #content, aside {
         width: 100%;
     }
-
-    
 
     .flex-row {
         flex-wrap: wrap;
