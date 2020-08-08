@@ -144,6 +144,7 @@ nav:hover {
 
 nav ul {
     margin: 0 auto;
+    padding: 0;
 }
 
 nav li a {
@@ -244,8 +245,12 @@ nav li {
         text-align: center;
     }
 
-    article section h2, article section p {
+    article section h2 {
         text-align: center;
+    }
+
+    article section p {
+        text-align: justify;
     }
 }
 
