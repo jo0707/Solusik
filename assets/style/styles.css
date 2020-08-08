@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #ffd70022;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    margin-top: 72px;
+    overflow: auto;
+}
+
+article p {
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+section {
+    padding: 16px;
+    border: 1px solid goldenrod;
+    border-width: 1px 0;
+}
+
+section p {
+    font-size: 1.3em;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+}
+
+aside table {
+    margin: auto;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: white;
+    background-color: #ebb400;
+}
+
+.big-letter {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.card {
+    margin: 24px;
+    padding: 48px 24px 24px 24px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px grey;
+}
+
+aside .card {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px grey;
+}
+
+.flex-row {
+    display: flex;
+    margin: auto;
+}
+
+.jumbotron {
+    display: flex;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+
+    background-image: linear-gradient(to bottom, #00000088, #00000088), url(../images/jumbotron-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.jumbotron-content {
+    margin: auto;
+    text-align: center;
+    color: whitesmoke;
+    cursor: default;
+}
+
+.jumbotron-content h1 {
+    font-size: 80px;
+    margin: 0;
+    text-shadow: 0 0 6px gold;
+}
+
+.jumbotron-content h4 {
+    font-size: 24px;
+    margin-top: -18px;
+}
+
+.jumbotron-content p {
+    font-size: 18px;
+}
+
+.nav-card {
+    box-shadow: 0px 2px 8px grey;
+}
+
+nav {
+    padding: 8px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    transition: .5s;
+}
+
+nav:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    margin: 0 auto;
+}
+
+nav li a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: orange;
+}
+
+nav li {
+    display: inline;
+
+    font-size: 18px;
+    margin-right: 32px;
+    padding: 0 8px;
+    list-style-type: none;
+    border: 0 solid #00000022;
+    border-width: 0 2px;
+}
+
+
+.article-title {
+    margin: 0 0 32px 0;
+
+    text-align: center;
+    font-size: 36px;
+    color: #202020;
+    
+}
+
+.flex-art-image {
+    flex-basis: 30%;
+    max-width: 30%;
+    margin: 8px;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flex-art-text {
+    flex-basis: 70%;
+    margin: 0 16px;
+}
+
+.flex-art-text p {
+    margin: 0 0 16px 0;
+}
+
+.contact-container {
+    flex-basis: 25%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid goldenrod;
+
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-image {
+    width: 100%;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+@media screen and (max-width: 1100px) {
+    #content, aside {
+        width: 100%;
+    }
+
+    .flex-row {
+        flex-wrap: wrap;
+    }
+
+    .flex-art-image {
+        margin: auto;
+        flex-basis: 100%;
+        max-width: 90%;
+        max-height: 500px;
+    }
+    
+    .flex-art-text {
+        flex-basis: 100%;
+        width: 100%;
+        margin: 0 16px;
+    }
+
+    article section.flex-row {
+        justify-content: center;
+        text-align: center;
+    }
+
+    article section h2, article section p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav ul {
+        margin: 0;
+    }
+
+    nav li {
+        margin-right: 8px;
+    }
+}
