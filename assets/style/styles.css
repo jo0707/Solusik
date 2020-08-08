@@ -223,6 +223,8 @@ nav li {
         width: 100%;
     }
 
+    
+
     .flex-row {
         flex-wrap: wrap;
     }
@@ -255,6 +257,15 @@ nav li {
 }
 
 @media screen and (max-width: 500px) {
+    .jumbotron-content h1 {
+            font-size: 48px;
+        }
+        
+    .jumbotron-content h4 {
+        font-size: 16px;
+        margin-top: -12px;
+    }
+
     nav ul {
         margin: 0;
     }
