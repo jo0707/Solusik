@@ -5,4 +5,6 @@
 <br/>
 
 📚 A very simple website based on HTML, CSS, and JavaScript.  
-📚 Made as a submission for ["Learn Basic Web Programming" on Dicoding](https://www.dicoding.com/academies/123)
+📚 Made as a submission for ["Learn Basic Web Programming" on Dicoding](https://www.dicoding.com/academies/123)  
+
+https://jo0707.github.io/Solusik/
